@@ -2,7 +2,7 @@ import random
 
 opciones = ["piedra", "papel", "tijera"]
 
-# Bucle para repetir el juego hasta que el usuario quiera salir
+#------------------------------------------------------------------------------------
 while True:
     usuario = input("Elige (piedra, papel, tijera) o 'salir' para terminar: ").lower()
     
@@ -11,8 +11,7 @@ while True:
         break
     
     ordenador = random.choice(opciones)
-
-    # Mostrar la elección del ordenador
+#--------------------------------------------------------------------------------------
     print("El ordenador ha elegido:", ordenador)
     
     if usuario not in opciones:
